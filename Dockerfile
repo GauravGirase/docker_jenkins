@@ -1,3 +1,3 @@
-FROM alpine:latest
-COPY README.md /home
-RUN apk add curl
+FROM python:3.8.6
+ADD app.py /app/app.py 
+CMD ["python", "app.py"]
